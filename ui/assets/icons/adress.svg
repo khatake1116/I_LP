@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#CDD6F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Contorno de la libreta / agenda -->
+    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
+    <!-- Anillas o espiral lateral izquierdo -->
+    <path d="M4 6h2"></path>
+    <path d="M4 10h2"></path>
+    <path d="M4 14h2"></path>
+    <path d="M4 18h2"></path>
+    <!-- Líneas internas de texto simuladas -->
+    <line x1="10" y1="8" x2="16" y2="8"></line>
+    <line x1="10" y1="12" x2="14" y2="12"></line>
+</svg>

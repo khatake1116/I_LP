@@ -1,0 +1,42 @@
+inventario_pro/
+│
+├── main.py                  # Punto de entrada de la aplicación (Inicializa la app y la DB)
+├── requirements.txt         # Dependencias del proyecto
+├── inventario.ilp           # Base local SQLite y formato oficial de respaldo
+│
+├── database/                # Capa de Datos y Modelos SQL
+│   ├── __init__.py
+│   ├── connection.py        # Conexión y configuración de la base de datos SQLite
+│   └── models.py            # Esquemas de tablas (Artículos, Compras, Envíos) y consultas SQL
+│
+├── core/                    # Lógica de Negocio y Automatización
+│   ├── __init__.py
+│   └── alerts.py            # Lógica de detección de envíos estancados (recordatorios)
+│
+└── ui/                      # Capa Visual (PySide6)
+    ├── __init__.py
+    ├── main_window.py       # Ventana principal (Layout de 3 pestañas + panel de alertas)
+    ├── splash_screen.py     # Pantalla de carga inicial
+    ├── assets/
+    │   ├── __init__.py
+    │   ├── app_icon.svg   
+    │   └── icons/
+    │       ├── articles.svg
+    │       ├── inventory.svg
+    │       ├── purchases.svg
+    │       ├── shipments.svg
+    │       ├── settings.svg
+    │       └── notifications.svg
+    │
+    ├── widgets/
+    │       ├── __init__.py
+    │       └── refresh_button.py
+    ├── views/
+    │       ├── __init__.py
+    │       ├── articles_view.py
+    │       ├── base_view.py
+    │       ├── inventory_view.py
+    │       ├── purchases_view.py
+    │       ├── notifications_view.py
+    │       └── shipments_view.py
+    └── styles.qss           # Estilos visuales (Tema Dark mode limpio y profesional)

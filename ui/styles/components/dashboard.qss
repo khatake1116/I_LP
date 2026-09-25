@@ -1,0 +1,484 @@
+/* ==========================================================
+   DASHBOARD / POS
+   Windows 10/11 Professional
+   ========================================================== */
+
+
+/* ==========================================================
+   DASHBOARD
+   ========================================================== */
+
+QLabel#DashboardTitle {
+
+    color: #1F2D3D;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+QLabel#DashboardSubtitle,
+QLabel#MetricCaption {
+
+    color: #5D6D7E;
+    font-size: 12px;
+}
+
+
+QLabel#DashboardSectionTitle {
+
+    color: #2980B9;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+
+/* --- TARJETAS DE MÉTRICAS --- */
+
+QFrame#MetricCard {
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+
+    min-height: 84px;
+}
+
+
+QLabel#MetricValue {
+
+    color: #1F5F8B;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* --- FOOTER --- */
+
+QFrame#DashboardFooter {
+
+    background-color: #FFFFFF;
+
+    border-top: 1px solid #CBD5E1;
+}
+
+
+QLabel#DashboardClock {
+
+    color: #5D6D7E;
+
+    font-family: "Courier New";
+    font-size: 11px;
+}
+
+
+/* ==========================================================
+   POS
+   ========================================================== */
+
+QWidget#PosShell {
+
+    background-color: #F5F7F9;
+
+    border: 1px solid #D5DBDB;
+    border-radius: 10px;
+}
+
+
+/* --- HEADER --- */
+
+QFrame#PosHeader {
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+}
+
+
+QLabel#PosTitle {
+
+    color: #1F2D3D;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+QLabel#PosSubtitle {
+
+    color: #5D6D7E;
+
+    font-size: 11px;
+}
+
+
+/* --- ESTADO --- */
+
+QLabel#PosStatusBadge {
+
+    background-color: #2E9B65;
+    color: #FFFFFF;
+
+    border-radius: 14px;
+
+    min-width: 72px;
+    min-height: 28px;
+
+    font-weight: 600;
+}
+
+
+/* --- MÉTRICAS POS --- */
+
+QFrame#PosMetricCard {
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+
+    min-height: 84px;
+}
+
+
+QLabel#PosMetricLabel {
+
+    color: #5D6D7E;
+    font-size: 11px;
+}
+
+
+QLabel#PosMetricValue {
+
+    color: #3498DB;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* --- PANELES --- */
+
+QFrame#PosPanel {
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+}
+
+
+QLabel#PosPanelTitle {
+
+    color: #2980B9;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* --- BLOQUES DE INFORMACIÓN --- */
+
+QFrame#PosInfoBlock,
+QFrame#PosSummaryBlock {
+
+    background-color: #F8FAFC;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+}
+
+
+/* --- TOTAL --- */
+
+QLabel#PosTotalValue {
+
+    color: #B7791F;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+/* ==========================================================
+   PERFIL
+   ========================================================== */
+
+QLabel#ProfileAvatar {
+
+    background-color: #3498DB;
+    color: #FFFFFF;
+
+    border-radius: 18px;
+
+    font-weight: 700;
+}
+
+
+QLabel#ProfileCompany {
+
+    color: #1F2D3D;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+QLabel#ProfileBranch {
+
+    color: #5D6D7E;
+
+    font-size: 11px;
+}
+
+
+/* ==========================================================
+   MONEDA
+   ========================================================== */
+
+QLabel#ExchangeRateLabel {
+
+    color: #1F5F8B;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #AFC4D4;
+    border-radius: 5px;
+
+    padding: 5px 7px;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+QComboBox#CurrencyCombo {
+
+    min-width: 58px;
+
+    background-color: #FFFFFF;
+    color: #2C3E50;
+
+    border: 1px solid #AFC4D4;
+    border-radius: 5px;
+
+    padding: 5px 8px;
+}
+
+
+/* ==========================================================
+   SALES
+   ========================================================== */
+
+QWidget#SalesShell {
+
+    background-color: #F5F7F9;
+
+    border: 1px solid #D5DBDB;
+    border-radius: 10px;
+}
+
+
+QFrame#SalesHeader {
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+}
+
+
+QLabel#SalesHeaderTitle {
+
+    color: #2980B9;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+QLabel#SalesTotalValue,
+QLabel#SalesFilterTotal {
+
+    color: #3498DB;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* ==========================================================
+   FILTROS / CONTENEDORES
+   ========================================================== */
+
+QFrame#FilterFrame,
+QFrame#CalendarContainer {
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+
+    margin: 4px 0;
+}
+
+
+/* ==========================================================
+   ALERTAS
+   ========================================================== */
+
+QLabel#AlertaLabel {
+
+    font-size: 13px;
+    font-weight: 600;
+
+    padding: 9px;
+
+    background-color: #F8FAFC;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 7px;
+}
+
+
+QLabel#AlertaLabel[alertLevel="normal"] {
+
+    color: #247A3D;
+    background-color: #F1F8F4;
+}
+
+
+QLabel#AlertaLabel[alertLevel="error"] {
+
+    color: #A93226;
+    background-color: #FDEDEC;
+}
+
+
+/* ==========================================================
+   RELOJ
+   ========================================================== */
+
+QLabel#DigitalClock {
+
+    font-family: "Courier New";
+
+    font-size: 28px;
+    font-weight: 700;
+
+    color: #2980B9;
+
+    background-color: #FFFFFF;
+
+    padding: 10px;
+
+    border-radius: 8px;
+    border: 1px solid #CBD5E1;
+}
+
+
+/* ==========================================================
+   SPLASH
+   ========================================================== */
+
+QWidget#SplashScreen {
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 10px;
+}
+
+
+QLabel#SplashTitle {
+
+    color: #2980B9;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    background: transparent;
+}
+
+
+QLabel#SplashLoading,
+QLabel#NotificationsInfo {
+
+    color: #5D6D7E;
+
+    font-size: 12px;
+
+    background: transparent;
+}
+
+
+QProgressBar#SplashProgress {
+
+    background-color: #E1E7EC;
+
+    border: none;
+    border-radius: 3px;
+}
+
+
+QProgressBar#SplashProgress::chunk {
+
+    background-color: #3498DB;
+
+    border-radius: 3px;
+}
+
+
+QLabel#NotificationsEmpty {
+
+    color: #7F8C8D;
+
+    font-size: 15px;
+    font-style: italic;
+
+    padding: 40px;
+}
+
+
+/* ==========================================================
+   SCROLLBAR GENERAL
+   ========================================================== */
+
+QScrollBar:vertical {
+
+    background-color: #F1F5F8;
+
+    width: 8px;
+
+    margin: 2px 0;
+    border-radius: 4px;
+}
+
+
+QScrollBar::handle:vertical {
+
+    background-color: #B8C4CE;
+
+    min-height: 32px;
+
+    border-radius: 4px;
+}
+
+
+QScrollBar::handle:vertical:hover {
+    background-color: #3498DB;
+}
+
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+
+    height: 0;
+    border: none;
+}

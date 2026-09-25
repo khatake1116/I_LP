@@ -1,0 +1,7 @@
+# requirements.txt
+# Framework GUI
+PySide6==6.6.1
+
+# Empaquetado
+pyinstaller==6.3.0
+

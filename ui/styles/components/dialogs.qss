@@ -1,0 +1,221 @@
+/* ==========================================================
+   DIALOGS
+   ========================================================== */
+
+QDialog {
+
+    background-color: #FFFFFF;
+    color: #2C3E50;
+
+    font-family: "Segoe UI";
+    font-size: 13px;
+}
+
+
+/* --- TEXTO --- */
+
+QDialog QLabel {
+    color: #2C3E50;
+}
+
+
+/* --- INPUTS --- */
+
+QLineEdit,
+QSpinBox,
+QDoubleSpinBox,
+QComboBox,
+QDateEdit {
+
+    min-height: 28px;
+
+    background-color: #FFFFFF;
+    color: #2C3E50;
+
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+
+    padding: 5px 8px;
+
+    selection-background-color: #3498DB;
+    selection-color: #FFFFFF;
+}
+
+QLineEdit:hover,
+QSpinBox:hover,
+QDoubleSpinBox:hover,
+QComboBox:hover,
+QDateEdit:hover {
+    border-color: #AFC4D4;
+}
+
+QLineEdit:focus,
+QSpinBox:focus,
+QDoubleSpinBox:focus,
+QComboBox:focus,
+QDateEdit:focus {
+    border: 1px solid #3498DB;
+}
+
+
+/* --- CAMPOS SOLO LECTURA --- */
+
+QLineEdit:read-only {
+
+    background-color: #F4F6F7;
+    color: #5D6D7E;
+
+    border-color: #D5DBDB;
+}
+
+
+/* --- COMBOBOX --- */
+
+QComboBox {
+    padding-right: 24px;
+}
+
+QComboBox::drop-down {
+    width: 22px;
+    border: none;
+}
+
+QComboBox QAbstractItemView {
+
+    background-color: #FFFFFF;
+    color: #2C3E50;
+
+    border: 1px solid #CBD5E1;
+
+    selection-background-color: #3498DB;
+    selection-color: #FFFFFF;
+}
+
+
+/* --- GROUPBOX --- */
+
+QGroupBox#SettingsGroup {
+
+    color: #2C3E50;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+
+    margin-top: 12px;
+    padding: 12px;
+
+    font-weight: 600;
+}
+
+QGroupBox#SettingsGroup::title {
+
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+
+    padding: 0 6px;
+
+    color: #2980B9;
+}
+
+
+/* --- SETTINGS --- */
+
+QLabel#SettingsLabel {
+    color: #2C3E50;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+QLabel#SettingsInfo {
+    color: #5D6D7E;
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+/* --- DIÁLOGOS ESPECÍFICOS --- */
+
+QLabel#DestinatarioSubtitle,
+QLabel#ShipmentDialogSection {
+
+    color: #2980B9;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    padding: 6px 0;
+}
+
+
+QLineEdit#DestinatarioInput,
+QTextEdit#DestinatarioInput {
+
+    background-color: #FFFFFF;
+    color: #2C3E50;
+
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+
+    padding: 7px;
+}
+
+QLineEdit#DestinatarioInput:focus,
+QTextEdit#DestinatarioInput:focus {
+    border-color: #3498DB;
+}
+
+
+/* --- ALERTAS --- */
+
+QLabel#PurchaseWarningLabel {
+
+    color: #8A5A00;
+
+    background-color: #FFF7E6;
+
+    border: 1px solid #F2D49B;
+    border-radius: 5px;
+
+    padding: 8px;
+}
+
+
+/* --- SCROLL DE DIÁLOGOS --- */
+
+QScrollArea#ShipmentDialogScroll {
+
+    background-color: transparent;
+    border: none;
+}
+
+QWidget#ShipmentDialogContent {
+
+    background-color: #FFFFFF;
+    color: #2C3E50;
+}
+
+
+/* --- MENÚS --- */
+
+QMenu {
+
+    background-color: #FFFFFF;
+    color: #2C3E50;
+
+    border: 1px solid #CBD5E1;
+
+    padding: 4px;
+}
+
+QMenu::item {
+    padding: 7px 24px 7px 10px;
+    border-radius: 4px;
+}
+
+QMenu::item:selected {
+
+    background-color: #3498DB;
+    color: #FFFFFF;
+}

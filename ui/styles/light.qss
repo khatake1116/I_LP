@@ -1,0 +1,784 @@
+/* ==========================================================
+   ILP - TEMA CLARO
+   ui/styles/light.qss
+
+   Misma identidad visual del tema oscuro.
+   Adaptación para interfaz clara tipo Windows 10/11.
+   ========================================================== */
+
+
+/* ==========================================================
+   BASE
+   ========================================================== */
+
+QMainWindow {
+    background-color: #F5F5F5;
+    color: #2C3E50;
+    font-family: "Segoe UI", sans-serif;
+}
+
+QWidget {
+    color: #2C3E50;
+}
+
+
+/* ==========================================================
+   CONTENEDORES PRINCIPALES
+   ========================================================== */
+
+QFrame#Sidebar {
+    background-color: #ECF0F1;
+    border-right: 1px solid #BDC3C7;
+}
+
+QFrame#TopHeader {
+    background-color: transparent;
+}
+
+QWidget#PosShell {
+    background-color: #F5F5F5;
+    border: 1px solid #D5DBDB;
+}
+
+QFrame#PosHeader {
+    background-color: #FFFFFF;
+    border: 1px solid #BDC3C7;
+}
+
+QFrame#PosMetricCard {
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1;
+}
+
+QFrame#PosPanel {
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1;
+}
+
+QFrame#PosInfoBlock,
+QFrame#PosSummaryBlock {
+    background-color: #F8FAFC;
+    border: 1px solid #CBD5E1;
+}
+
+QWidget#SalesShell {
+    background-color: #F5F5F5;
+    border: 1px solid #D5DBDB;
+}
+
+QFrame#SalesHeader {
+    background-color: transparent;
+    border: 1px solid #BDC3C7;
+}
+
+
+/* ==========================================================
+   SIDEBAR
+   ========================================================== */
+
+QPushButton#SidebarToggle {
+    background-color: transparent;
+    color: #2C3E50;
+}
+
+QPushButton#SidebarToggle:hover {
+    background-color: #D5DBDB;
+    color: #2C3E50;
+}
+
+QPushButton#NavButton {
+    background-color: transparent;
+    color: #2C3E50;
+}
+
+QPushButton#NavButton:hover {
+    background-color: #D5DBDB;
+    color: #2C3E50;
+}
+
+QPushButton#NavButton:checked {
+    background-color: #3498DB;
+    color: #FFFFFF;
+}
+
+
+/* ==========================================================
+   BOTONES
+   ========================================================== */
+
+QPushButton {
+    background-color: #3498DB;
+    color: #FFFFFF;
+}
+
+QPushButton:hover {
+    background-color: #2980B9;
+}
+
+QPushButton#btn_primario,
+QPushButton#btn_guardar {
+    background-color: #3498DB;
+    color: #FFFFFF;
+}
+
+QPushButton#btn_primario:hover,
+QPushButton#btn_guardar:hover {
+    background-color: #2980B9;
+}
+
+QPushButton#btn_cancelar,
+QPushButton#PosSecondaryButton {
+    background-color: #95A5A6;
+    color: #FFFFFF;
+}
+
+QPushButton#btn_cancelar:hover,
+QPushButton#PosSecondaryButton:hover {
+    background-color: #7F8C8D;
+}
+
+QPushButton#btn_danger {
+    background-color: #E74C3C;
+    color: #FFFFFF;
+}
+
+QPushButton#btn_danger:hover {
+    background-color: #C0392B;
+}
+
+QPushButton#PosActionButton {
+    background-color: #EAF2F8;
+    color: #2C3E50;
+    border-color: #CBD5E1;
+}
+
+QPushButton#PosActionButton:hover {
+    background-color: #D9EAF8;
+}
+
+QPushButton#PosPrimaryButton {
+    background-color: #3498DB;
+    color: #FFFFFF;
+}
+
+QPushButton#PosPrimaryButton:hover {
+    background-color: #2980B9;
+}
+
+QPushButton#LogisticsPrimaryButton {
+    background-color: #3498DB;
+    color: #FFFFFF;
+    border-color: #2980B9;
+}
+
+QPushButton#LogisticsPrimaryButton:hover {
+    background-color: #2980B9;
+}
+
+QPushButton#FilterButton {
+    background-color: #FFFFFF;
+    color: #5D6D7E;
+    border-color: #C7D5DF;
+}
+
+QPushButton#FilterButton:hover {
+    background-color: #EAF0F4;
+    color: #2C3E50;
+}
+
+QPushButton#FilterButton:checked {
+    background-color: #3498DB;
+    color: #FFFFFF;
+    border-color: #3498DB;
+}
+
+
+/* ==========================================================
+   CAMPOS DE ENTRADA
+   ========================================================== */
+
+QLineEdit,
+QSpinBox,
+QDoubleSpinBox,
+QComboBox,
+QDateEdit {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    border-color: #BDC3C7;
+}
+
+QLineEdit:focus,
+QSpinBox:focus,
+QDoubleSpinBox:focus,
+QComboBox:focus,
+QDateEdit:focus {
+    border-color: #3498DB;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    selection-background-color: #3498DB;
+    selection-color: #FFFFFF;
+}
+
+
+/* ==========================================================
+   TABLAS
+   ========================================================== */
+
+QTableView,
+QTableWidget {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    gridline-color: #BDC3C7;
+    border-color: #BDC3C7;
+    selection-background-color: #D5DBDB;
+    selection-color: #2C3E50;
+}
+
+QTableWidget {
+    alternate-background-color: #F2F6F8;
+}
+
+QHeaderView::section {
+    background-color: #ECF0F1;
+    color: #2C3E50;
+    border-bottom-color: #BDC3C7;
+}
+
+
+/* ==========================================================
+   TABLAS ESPECÍFICAS
+   ========================================================== */
+
+QTableWidget#PosCartTable {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    gridline-color: #BDC3C7;
+    border-color: #BDC3C7;
+    selection-background-color: #D5DBDB;
+    selection-color: #2C3E50;
+}
+
+QTableWidget#SalesTable {
+    background-color: #FFFFFF;
+    alternate-background-color: #F2F6F8;
+    border-color: #CBD5E1;
+    selection-background-color: #3498DB;
+    selection-color: #FFFFFF;
+}
+
+QTableWidget#ShipmentItemsTable {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    gridline-color: #BDC3C7;
+    border-color: #BDC3C7;
+    alternate-background-color: #F2F6F8;
+}
+
+
+/* ==========================================================
+   DIÁLOGOS
+   ========================================================== */
+
+QDialog {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+}
+
+QDialog QLabel {
+    color: #2C3E50;
+}
+
+QDialog QLineEdit,
+QDialog QSpinBox,
+QDialog QDoubleSpinBox,
+QDialog QComboBox,
+QDialog QDateEdit {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    border-color: #BDC3C7;
+}
+
+QDialog QLineEdit:focus,
+QDialog QSpinBox:focus,
+QDialog QDoubleSpinBox:focus,
+QDialog QComboBox:focus,
+QDialog QDateEdit:focus {
+    border-color: #3498DB;
+}
+
+QDialog QComboBox QAbstractItemView {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    selection-background-color: #3498DB;
+    selection-color: #FFFFFF;
+}
+
+QDialog QPushButton {
+    background-color: #3498DB;
+    color: #FFFFFF;
+}
+
+QDialog QPushButton:hover {
+    background-color: #2980B9;
+}
+
+QDialog QPushButton#btn_cancelar {
+    background-color: #95A5A6;
+    color: #FFFFFF;
+}
+
+QDialog QPushButton#btn_cancelar:hover {
+    background-color: #7F8C8D;
+}
+
+
+/* ==========================================================
+   GROUP BOX / SETTINGS
+   ========================================================== */
+
+QGroupBox#SettingsGroup {
+    color: #2C3E50;
+    background-color: #FFFFFF;
+    border-color: #BDC3C7;
+}
+
+QGroupBox#SettingsGroup::title {
+    color: #2980B9;
+}
+
+QGroupBox#SettingsGroup QLabel {
+    color: #2C3E50;
+}
+
+QGroupBox#SettingsGroup QLineEdit,
+QGroupBox#SettingsGroup QSpinBox,
+QGroupBox#SettingsGroup QDoubleSpinBox,
+QGroupBox#SettingsGroup QComboBox {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    border-color: #BDC3C7;
+}
+
+QGroupBox#SettingsGroup QLineEdit:read-only {
+    color: #5D6D7E;
+    background-color: #F5F5F5;
+}
+
+QLabel#SettingsLabel {
+    color: #2C3E50;
+}
+
+QLabel#SettingsInfo {
+    color: #5D6D7E;
+}
+
+
+/* ==========================================================
+   LABELS
+   ========================================================== */
+
+QLabel#CategoryTitle,
+QLabel#DashboardSectionTitle,
+QLabel#ShipmentSectionTitle,
+QLabel#SalesHeaderTitle,
+QLabel#PosPanelTitle {
+    color: #2980B9;
+}
+
+QLabel#CategorySubtitle,
+QLabel#DashboardSubtitle,
+QLabel#MetricCaption,
+QLabel#PosSubtitle {
+    color: #5D6D7E;
+}
+
+QLabel#DashboardTitle,
+QLabel#PosTitle {
+    color: #1F2D3D;
+}
+
+QLabel#PosMetricLabel {
+    color: #5D6D7E;
+}
+
+QLabel#PosMetricValue,
+QLabel#MetricValue {
+    color: #3498DB;
+}
+
+QLabel#PosTotalValue {
+    color: #B7791F;
+}
+
+QLabel#SalesTotalValue,
+QLabel#SalesFilterTotal {
+    color: #3498DB;
+}
+
+QLabel#InventoryInfo {
+    color: #2980B9;
+}
+
+QLabel#ShipmentSeparator {
+    color: #BDC3C7;
+}
+
+
+/* ==========================================================
+   ESTADO / ALERTAS
+   ========================================================== */
+
+QLabel#AlertaLabel {
+    background-color: #ECF0F1;
+    color: #2C3E50;
+    border-color: #BDC3C7;
+}
+
+QLabel#AlertaLabel[alertLevel="normal"] {
+    color: #247A3D;
+    background-color: #ECF0F1;
+}
+
+QLabel#AlertaLabel[alertLevel="error"] {
+    color: #A93226;
+    background-color: #FDEDEC;
+}
+
+QLabel#PurchaseWarningLabel {
+    color: #9A6400;
+    background-color: #FEF3CD;
+}
+
+QPushButton#PurchaseCategoryStatus {
+    background-color: transparent;
+}
+
+QPushButton#PurchaseCategoryStatus[categoryStatus="empty"] {
+    color: #5D6D7E;
+}
+
+QPushButton#PurchaseCategoryStatus[categoryStatus="valid"] {
+    color: #247A3D;
+}
+
+QPushButton#PurchaseCategoryStatus[categoryStatus="invalid"] {
+    color: #A93226;
+}
+
+QPushButton#ShipmentRemoveButton {
+    color: #A93226;
+}
+
+
+/* ==========================================================
+   LISTAS / CATEGORÍAS
+   ========================================================== */
+
+QListWidget#CategoryList {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    border-color: #BDC3C7;
+}
+
+QListWidget#CategoryList::item:hover {
+    background-color: #D5DBDB;
+}
+
+QListWidget#CategoryList::item:selected {
+    background-color: #3498DB;
+    color: #FFFFFF;
+}
+
+QLineEdit#CategoryInput {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    border-color: #BDC3C7;
+}
+
+QLineEdit#CategoryInput:focus {
+    border-color: #3498DB;
+}
+
+QFrame#CategorySeparator {
+    background-color: #BDC3C7;
+}
+
+
+/* ==========================================================
+   RELOJ
+   ========================================================== */
+
+QLabel#DigitalClock {
+    color: #2980B9;
+    background-color: #FFFFFF;
+    border-color: #BDC3C7;
+}
+
+QLabel#DashboardClock {
+    color: #5D6D7E;
+}
+
+
+/* ==========================================================
+   PERFIL / MONEDA
+   ========================================================== */
+
+QLabel#ProfileAvatar {
+    background-color: #3498DB;
+    color: #FFFFFF;
+}
+
+QLabel#ProfileCompany {
+    color: #1F2D3D;
+}
+
+QLabel#ProfileBranch {
+    color: #5D6D7E;
+}
+
+QLabel#ExchangeRateLabel {
+    color: #1F5F8B;
+    background-color: #FFFFFF;
+    border-color: #AFC4D4;
+}
+
+QComboBox#CurrencyCombo {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    border-color: #AFC4D4;
+}
+
+QComboBox#CurrencyCombo QAbstractItemView {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    selection-background-color: #3498DB;
+    selection-color: #FFFFFF;
+}
+
+
+/* ==========================================================
+   HISTORIAL
+   ========================================================== */
+
+QFrame#HistoryPanel {
+    background-color: #ECF0F1;
+    border-left-color: #BDC3C7;
+}
+
+QLabel#HistoryTitle {
+    color: #2C3E50;
+    background-color: #D5DBDB;
+    border-color: #BDC3C7;
+}
+
+QPushButton#UndoButton,
+QPushButton#RedoButton {
+    background-color: #D5DBDB;
+    color: #2C3E50;
+    border-color: #BDC3C7;
+}
+
+QPushButton#UndoButton:hover,
+QPushButton#RedoButton:hover {
+    background-color: #BDC3C7;
+    border-color: #3498DB;
+}
+
+QPushButton#UndoButton:disabled,
+QPushButton#RedoButton:disabled {
+    color: #95A5A6;
+    border-color: #D5DBDB;
+}
+
+QPushButton#ClearHistoryButton {
+    background-color: #95A5A6;
+    color: #FFFFFF;
+    border-color: #BDC3C7;
+}
+
+QPushButton#ClearHistoryButton:hover {
+    background-color: #7F8C8D;
+    border-color: #3498DB;
+}
+
+
+/* ==========================================================
+   CAMBIO DE TEMA
+   ========================================================== */
+
+QPushButton#ThemeButton {
+    background-color: #ECF0F1;
+    color: #2C3E50;
+    border-color: #BDC3C7;
+}
+
+QPushButton#ThemeButton:hover {
+    background-color: #D5DBDB;
+}
+
+QPushButton#ThemeButton:checked {
+    background-color: #3498DB;
+    color: #FFFFFF;
+    border-color: #3498DB;
+}
+
+QPushButton#ThemeButton:checked:hover {
+    background-color: #2980B9;
+}
+
+
+/* ==========================================================
+   SPLASH
+   ========================================================== */
+
+QWidget#SplashScreen {
+    background-color: #FFFFFF;
+    border-color: #BDC3C7;
+}
+
+QLabel#SplashTitle {
+    color: #2980B9;
+}
+
+QLabel#SplashLoading,
+QLabel#NotificationsInfo {
+    color: #5D6D7E;
+}
+
+QProgressBar#SplashProgress {
+    background-color: #D5DBDB;
+}
+
+QProgressBar#SplashProgress::chunk {
+    background-color: #3498DB;
+}
+
+QLabel#NotificationsEmpty {
+    color: #5D6D7E;
+}
+
+
+/* ==========================================================
+   MENÚS
+   ========================================================== */
+
+QMenu {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    border-color: #BDC3C7;
+}
+
+QMenu::item:selected {
+    background-color: #3498DB;
+    color: #FFFFFF;
+}
+
+
+/* ==========================================================
+   SCROLL
+   ========================================================== */
+
+QScrollArea {
+    background-color: transparent;
+    border: none;
+}
+
+QScrollArea > QWidget > QWidget {
+    background-color: #FFFFFF;
+}
+
+QScrollArea#SettingsScrollArea > QWidget > QWidget {
+    background-color: transparent;
+}
+
+QScrollArea#SettingsScrollArea QWidget {
+    color: #2C3E50;
+}
+
+QScrollBar:vertical {
+    background-color: #E6EDF1;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #AFC4D4;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #3498DB;
+}
+
+
+/* ==========================================================
+   TOOLTIPS
+   ========================================================== */
+
+QToolTip {
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    border-color: #BDC3C7;
+}
+
+
+/* ==========================================================
+   TABS - IDENTIDAD
+   La geometría queda en components/tabs.qss
+   ========================================================== */
+
+QTabBar::tab {
+    background-color: #EAF0F4;
+    color: #5D6D7E;
+    border-color: #C7D5DF;
+}
+
+QTabBar::tab:selected {
+    background-color: #3498DB;
+    color: #FFFFFF;
+    border-color: #3498DB;
+}
+
+QTabBar::tab:hover:!selected {
+    background-color: #D5E2EA;
+    color: #2C3E50;
+}
+
+QTabWidget#DashboardTabWidget,
+QTabWidget#InventoryTabWidget {
+    background-color: #F5F5F5;
+}
+
+QTabWidget#DashboardTabWidget::pane,
+QTabWidget#InventoryTabWidget::pane {
+    background-color: #FFFFFF;
+    border-color: #C7D5DF;
+}
+
+QTabWidget#SalesTabs::pane,
+QTabWidget#LogisticsTabs::pane,
+QTabWidget#InventoryTabs::pane,
+QTabWidget#PurchasesTabs::pane {
+    background-color: #FFFFFF;
+    border-color: #C7D5DF;
+}
+
+
+/* ==========================================================
+   BLOQUES ESPECÍFICOS
+   ========================================================== */
+
+QLabel#PosStatusBadge {
+    background-color: #2E9B65;
+    color: #FFFFFF;
+}
+
+QFrame#MetricCard {
+    background-color: #FFFFFF;
+    border-color: #C7D5DF;
+}
+
+QFrame#DashboardFooter {
+    background-color: #FFFFFF;
+    border-top-color: #C7D5DF;
+}
