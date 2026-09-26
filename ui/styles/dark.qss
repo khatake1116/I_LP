@@ -346,6 +346,39 @@ QDialog QPushButton#btn_cancelar:hover {
 
 
 /* ==========================================================
+   ESTADOS DINÁMICOS (dynamic properties)
+   Deben declararse AQUI porque Qt resuelve los selectores de
+   propiedad dinámica en tiempo de polish(): si la propiedad se
+   asigna después de aplicar el QSS, la regla debe existir en la
+   hoja del tema o el estado queda sin estilo (error silencioso).
+   ========================================================== */
+
+QLabel#AlertaLabel[alertLevel="normal"] {
+    color: #A6E3A1;
+    background-color: #181825;
+    border-color: #313244;
+}
+
+QLabel#AlertaLabel[alertLevel="error"] {
+    color: #F38BA8;
+    background-color: #2A1E28;
+    border-color: #EBA0AC;
+}
+
+QPushButton#PurchaseCategoryStatus[categoryStatus="empty"] {
+    color: #A6ADC8;
+}
+
+QPushButton#PurchaseCategoryStatus[categoryStatus="valid"] {
+    color: #A6E3A1;
+}
+
+QPushButton#PurchaseCategoryStatus[categoryStatus="invalid"] {
+    color: #F38BA8;
+}
+
+
+/* ==========================================================
    GROUP BOX / SETTINGS
    ========================================================== */
 
@@ -451,35 +484,8 @@ QLabel#AlertaLabel {
     border-color: #313244;
 }
 
-QLabel#AlertaLabel[alertLevel="normal"] {
-    color: #A6E3A1;
-    background-color: #313244;
-}
-
-QLabel#AlertaLabel[alertLevel="error"] {
-    color: #F38BA8;
-    background-color: #313244;
-}
-
-QLabel#PurchaseWarningLabel {
-    color: #FAB387;
-    background-color: #313244;
-}
-
 QPushButton#PurchaseCategoryStatus {
     background-color: transparent;
-}
-
-QPushButton#PurchaseCategoryStatus[categoryStatus="empty"] {
-    color: #A6ADC8;
-}
-
-QPushButton#PurchaseCategoryStatus[categoryStatus="valid"] {
-    color: #A6E3A1;
-}
-
-QPushButton#PurchaseCategoryStatus[categoryStatus="invalid"] {
-    color: #F38BA8;
 }
 
 QPushButton#ShipmentRemoveButton {

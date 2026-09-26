@@ -1,0 +1,358 @@
+/* ==========================================================
+   ATENCION: archivo GENERADO automaticamente.
+   Fuente: ui/styles/components/buttons.qss
+   Herramienta: scripts/generate_dark_components.py
+   No editar a mano: regenerar tras cambiar el componente claro.
+   ========================================================== */
+
+/* ==========================================================
+   BUTTONS
+   Identidad: Windows 10/11 Professional
+   ========================================================== */
+
+/* --- BOTÓN BASE --- */
+
+QPushButton {
+    min-height: 30px;
+    padding: 6px 14px;
+
+    background-color: #89B4FA;
+    color: #1E1E2E;
+
+    border: 1px solid #B4BEFE;
+    border-radius: 6px;
+
+    font-family: "Segoe UI";
+    font-size: 13px;
+    font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #B4BEFE;
+}
+
+QPushButton:pressed {
+    background-color: #7FA0E8;
+}
+
+QPushButton:disabled {
+    background-color: #313244;
+    color: #45475A;
+    border-color: #313244;
+}
+
+
+/* --- BOTÓN PRIMARIO --- */
+
+QPushButton#btn_primario,
+QPushButton#btn_guardar,
+QPushButton#LogisticsPrimaryButton,
+QPushButton#PosPrimaryButton {
+
+    min-height: 32px;
+    padding: 7px 16px;
+
+    background-color: #89B4FA;
+    color: #1E1E2E;
+
+    border: 1px solid #B4BEFE;
+    border-radius: 6px;
+
+    font-weight: 600;
+}
+
+QPushButton#btn_primario:hover,
+QPushButton#btn_guardar:hover,
+QPushButton#LogisticsPrimaryButton:hover,
+QPushButton#PosPrimaryButton:hover {
+    background-color: #B4BEFE;
+}
+
+QPushButton#btn_primario:pressed,
+QPushButton#btn_guardar:pressed,
+QPushButton#LogisticsPrimaryButton:pressed,
+QPushButton#PosPrimaryButton:pressed {
+    background-color: #7FA0E8;
+}
+
+
+/* --- BOTÓN SECUNDARIO --- */
+
+QPushButton#btn_cancelar,
+QPushButton#PosSecondaryButton {
+
+    min-height: 30px;
+    padding: 6px 14px;
+
+    background-color: #45475A;
+    color: #CDD6F4;
+
+    border: 1px solid #585B70;
+    border-radius: 6px;
+
+    font-weight: 600;
+}
+
+QPushButton#btn_cancelar:hover,
+QPushButton#PosSecondaryButton:hover {
+    background-color: #585B70;
+}
+
+
+/* --- BOTÓN DE ACCIÓN --- */
+
+QPushButton#PosActionButton {
+
+    min-height: 30px;
+    padding: 6px 12px;
+
+    background-color: #1E1E2E;
+    color: #CDD6F4;
+
+    border: 1px solid #313244;
+    border-radius: 6px;
+
+    font-weight: 600;
+}
+
+QPushButton#PosActionButton:hover {
+    background-color: #2A2A40;
+}
+
+QPushButton#PosActionButton:pressed {
+    background-color: #363650;
+}
+
+
+/* --- BOTÓN DE FILTRO --- */
+
+QPushButton#FilterButton {
+
+    min-height: 30px;
+    padding: 6px 12px;
+
+    background-color: #1E1E2E;
+    color: #A6ADC8;
+
+    border: 1px solid #313244;
+    border-radius: 6px;
+
+    font-weight: 600;
+}
+
+QPushButton#FilterButton:hover {
+    background-color: #1E1E2E;
+    color: #CDD6F4;
+}
+
+QPushButton#FilterButton:checked {
+    background-color: #89B4FA;
+    color: #1E1E2E;
+    border-color: #89B4FA;
+}
+
+
+/* --- SIDEBAR TOGGLE --- */
+
+QPushButton#SidebarToggle {
+
+    min-height: 30px;
+
+    background-color: transparent;
+    color: #CDD6F4;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 7px 12px;
+
+    text-align: left;
+    font-weight: 600;
+}
+
+QPushButton#SidebarToggle:hover {
+    background-color: #313244;
+}
+
+
+/* --- NAVEGACIÓN --- */
+
+QPushButton#NavButton {
+
+    min-height: 32px;
+
+    background-color: transparent;
+    color: #CDD6F4;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 8px 12px;
+
+    text-align: left;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+QPushButton#NavButton:hover {
+    background-color: #313244;
+}
+
+QPushButton#NavButton:checked {
+    background-color: #89B4FA;
+    color: #1E1E2E;
+    font-weight: 600;
+}
+
+
+/* --- HISTORIAL --- */
+
+QPushButton#HistoryToggle {
+
+    min-height: 30px;
+
+    background-color: #1E1E2E;
+    color: #CDD6F4;
+
+    border: 1px solid #313244;
+    border-radius: 6px;
+
+    padding: 6px 10px;
+}
+
+QPushButton#HistoryToggle:hover {
+    background-color: #1E1E2E;
+}
+
+QPushButton#HistoryToggle:checked {
+    background-color: #89B4FA;
+    color: #1E1E2E;
+    border-color: #89B4FA;
+}
+
+
+/* --- UNDO / REDO --- */
+
+QPushButton#UndoButton,
+QPushButton#RedoButton {
+
+    min-height: 30px;
+
+    background-color: #1E1E2E;
+    color: #CDD6F4;
+
+    border: 1px solid #313244;
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+QPushButton#UndoButton:hover,
+QPushButton#RedoButton:hover {
+    background-color: #313244;
+    border-color: #89B4FA;
+}
+
+QPushButton#UndoButton:disabled,
+QPushButton#RedoButton:disabled {
+    color: #585B70;
+    background-color: #181825;
+    border-color: #313244;
+}
+
+
+/* --- LIMPIAR HISTORIAL --- */
+
+QPushButton#ClearHistoryButton {
+
+    min-height: 30px;
+
+    background-color: #45475A;
+    color: #CDD6F4;
+
+    border: 1px solid #585B70;
+    border-radius: 6px;
+
+    padding: 6px 12px;
+}
+
+QPushButton#ClearHistoryButton:hover {
+    background-color: #585B70;
+}
+
+
+/* --- PELIGRO --- */
+
+QPushButton#btn_danger {
+
+    min-height: 30px;
+
+    background-color: #E74C3C;
+    color: #CDD6F4;
+
+    border: 1px solid #EBA0AC;
+    border-radius: 6px;
+
+    padding: 7px 16px;
+
+    font-weight: 600;
+}
+
+QPushButton#btn_danger:hover {
+    background-color: #EBA0AC;
+}
+
+QPushButton#btn_danger:pressed {
+    background-color: #F38BA8;
+}
+
+
+/* --- BOTÓN DE ELIMINAR ENVÍO --- */
+
+QPushButton#ShipmentRemoveButton {
+
+    background-color: transparent;
+    color: #EBA0AC;
+
+    border: none;
+    padding: 4px 8px;
+
+    font-weight: 600;
+}
+
+QPushButton#ShipmentRemoveButton:hover {
+    color: #F38BA8;
+    background-color: #2A1E28;
+}
+
+
+/* --- BOTÓN DE TEMA --- */
+
+QPushButton#ThemeButton {
+
+    min-height: 32px;
+
+    background-color: #1E1E2E;
+    color: #CDD6F4;
+
+    border: 1px solid #313244;
+    border-radius: 6px;
+
+    padding: 7px 16px;
+
+    font-weight: 600;
+}
+
+QPushButton#ThemeButton:hover {
+    background-color: #313244;
+}
+
+QPushButton#ThemeButton:checked {
+    background-color: #89B4FA;
+    color: #1E1E2E;
+    border-color: #89B4FA;
+}
+
+QPushButton#ThemeButton:checked:hover {
+    background-color: #B4BEFE;
+}
