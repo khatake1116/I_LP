@@ -15,6 +15,7 @@ Idempotente: puede ejecutarse tantas veces como se modifiquen los .qss
 del tema claro.
 """
 
+import re
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -52,10 +53,12 @@ COLOR_MAP = {
     "#3498DB": "#89B4FA",
     "#2980B9": "#B4BEFE",
     "#2471A3": "#7FA0E8",
-    # Tono sobre acento: en oscuro el acento es claro, el texto debe ser oscuro
-    "#7F8C8D": "#11111B",
-    # Botón secundario
+    # Botón secundario: superficie neutra elevada (Surface1). El texto
+    # blanco sobre #45475A mantiene el mismo contraste que el claro
+    # (blanco sobre #95A5A6). Antes se mapeaba a #11111B (crash), lo que
+    # dejaba bordes invisibles y rompía la identidad del tema oscuro.
     "#95A5A6": "#45475A",
+    "#7F8C8D": "#585B70",
     # Variantes suaves de hover/selección sobre azul
     "#EAF2F8": "#1E1E2E",
     "#D9EAF8": "#2A2A40",
@@ -77,7 +80,10 @@ COLOR_MAP = {
     # Error
     "#A93226": "#F38BA8",
     "#C0392B": "#EBA0AC",
-    "#E74C3C": "#F38BA8",
+    # Peligro: fondo rojo. En claro (#E74C3C) lleva texto blanco; en
+    # oscuro no puede usarse un rosa pastel con texto blanco (baja
+    # contraste), por eso btn_danger fija su propio color de texto.
+    "#E74C3C": "#E74C3C",
     "#FDEDEC": "#2A1E28",
     # Advertencia
     "#8A5A00": "#FAB387",
@@ -87,6 +93,25 @@ COLOR_MAP = {
     # en oscuro se usa el amarillo Catppuccin para mantener contraste.
     "#B7791F": "#F9E2AF",
 }
+
+# Reglas especiales de cuerpo de regla (aplicadas ANTES del mapeo
+# genérico de COLOR_MAP, mediante expresiones regulares):
+#
+# Cuando el texto claro es BLANCO sobre un relleno de tono medio
+# (#95A5A6 secundario, #E74C3C peligro), al mapear el fondo a una
+# superficie oscura Catppuccin (Surface1/Osuroy) ese blanco ya no es
+# legible y debe sustituirse por la tinta clara del tema (#CDD6F4).
+# El patrón reconoce tanto el hex claro original como su equivalente
+# oscuro ya mapeado, por robustez.
+SPECIAL_BODY_RULES = {
+    r"(background-color:\s*#(?:95A5A6|45475A);\s*"
+    r"[^{}]*?color:\s*)#FFFFFF":
+        r"\g<1>#CDD6F4",
+    r"(background-color:\s*#(?:E74C3C|F38BA8);\s*"
+    r"[^{}]*?color:\s*)#FFFFFF":
+        r"\g<1>#CDD6F4",
+}
+
 
 HEADER = (
     "/* ==========================================================\n"
@@ -101,14 +126,30 @@ HEADER = (
 def to_dark(text: str) -> str:
     """Aplica el mapeo de paleta clara -> oscura (insensible a mayusculas).
 
-    Se sustituyen los hex sobre una copia en minusculas para preservar
-    intactas las propiedades QSS (nombres, unidades y cadenas), que son
-    sensibles a mayusculas.
+    IMPORTANTE: solo se reemplazan los hex dentro del cuerpo { ... } de
+    cada regla. Los selectores QSS son sensibles a mayusculas en Qt6
+    (QTypeSelector y los objectName como "PosPrimaryButton"), por lo que
+    minusculizar el archivo completo dejaba TODOS los componentes oscuros
+    inoperantes: la interfaz caia al estilo por defecto de Qt y se veia
+    distinta (apretada/forzada) respecto al tema claro. Las cadenas de
+    texto (font-family, url()) tampoco deben alterarse.
     """
-    lowered = text.lower()
-    for light_hex, dark_hex in COLOR_MAP.items():
-        lowered = lowered.replace(light_hex.lower(), dark_hex.lower())
-    return lowered
+
+    def _map_body(match):
+        body = match.group(1)
+
+        # 1) Casos especiales (patrones multi-linea que dependen del
+        #    valor YA mapeado de background-color). Se aplican antes que
+        #    el reemplazo generico de "#FFFFFF".
+        for pattern, replacement in SPECIAL_BODY_RULES.items():
+            body = re.sub(pattern, replacement, body, flags=re.IGNORECASE)
+
+        # 2) Resto de la paleta.
+        for light_hex, dark_hex in COLOR_MAP.items():
+            body = re.sub(re.escape(light_hex), dark_hex, body, flags=re.IGNORECASE)
+        return "{" + body + "}"
+
+    return re.sub(r"\{([^{}]*)\}", _map_body, text)
 
 
 def main() -> None:

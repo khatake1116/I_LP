@@ -6,108 +6,108 @@
    ========================================================== */
 
 /* ==========================================================
-   buttons
-   identidad: windows 10/11 professional
+   BUTTONS
+   Identidad: Windows 10/11 Professional
    ========================================================== */
 
-/* --- botón base --- */
+/* --- BOTÓN BASE --- */
 
-qpushbutton {
+QPushButton {
     min-height: 30px;
     padding: 6px 14px;
 
-    background-color: #89b4fa;
-    color: #1e1e2e;
+    background-color: #89B4FA;
+    color: #1E1E2E;
 
-    border: 1px solid #b4befe;
+    border: 1px solid #B4BEFE;
     border-radius: 6px;
 
-    font-family: "segoe ui";
+    font-family: "Segoe UI";
     font-size: 13px;
     font-weight: 600;
 }
 
-qpushbutton:hover {
-    background-color: #b4befe;
+QPushButton:hover {
+    background-color: #B4BEFE;
 }
 
-qpushbutton:pressed {
-    background-color: #7fa0e8;
+QPushButton:pressed {
+    background-color: #7FA0E8;
 }
 
-qpushbutton:disabled {
+QPushButton:disabled {
     background-color: #313244;
-    color: #45475a;
+    color: #45475A;
     border-color: #313244;
 }
 
 
-/* --- botón primario --- */
+/* --- BOTÓN PRIMARIO --- */
 
-qpushbutton#btn_primario,
-qpushbutton#btn_guardar,
-qpushbutton#logisticsprimarybutton,
-qpushbutton#posprimarybutton {
+QPushButton#btn_primario,
+QPushButton#btn_guardar,
+QPushButton#LogisticsPrimaryButton,
+QPushButton#PosPrimaryButton {
 
     min-height: 32px;
     padding: 7px 16px;
 
-    background-color: #89b4fa;
-    color: #1e1e2e;
+    background-color: #89B4FA;
+    color: #1E1E2E;
 
-    border: 1px solid #b4befe;
+    border: 1px solid #B4BEFE;
     border-radius: 6px;
 
     font-weight: 600;
 }
 
-qpushbutton#btn_primario:hover,
-qpushbutton#btn_guardar:hover,
-qpushbutton#logisticsprimarybutton:hover,
-qpushbutton#posprimarybutton:hover {
-    background-color: #b4befe;
+QPushButton#btn_primario:hover,
+QPushButton#btn_guardar:hover,
+QPushButton#LogisticsPrimaryButton:hover,
+QPushButton#PosPrimaryButton:hover {
+    background-color: #B4BEFE;
 }
 
-qpushbutton#btn_primario:pressed,
-qpushbutton#btn_guardar:pressed,
-qpushbutton#logisticsprimarybutton:pressed,
-qpushbutton#posprimarybutton:pressed {
-    background-color: #7fa0e8;
+QPushButton#btn_primario:pressed,
+QPushButton#btn_guardar:pressed,
+QPushButton#LogisticsPrimaryButton:pressed,
+QPushButton#PosPrimaryButton:pressed {
+    background-color: #7FA0E8;
 }
 
 
-/* --- botón secundario --- */
+/* --- BOTÓN SECUNDARIO --- */
 
-qpushbutton#btn_cancelar,
-qpushbutton#possecondarybutton {
+QPushButton#btn_cancelar,
+QPushButton#PosSecondaryButton {
 
     min-height: 30px;
     padding: 6px 14px;
 
-    background-color: #45475a;
-    color: #1e1e2e;
+    background-color: #45475A;
+    color: #CDD6F4;
 
-    border: 1px solid #11111b;
+    border: 1px solid #585B70;
     border-radius: 6px;
 
     font-weight: 600;
 }
 
-qpushbutton#btn_cancelar:hover,
-qpushbutton#possecondarybutton:hover {
-    background-color: #11111b;
+QPushButton#btn_cancelar:hover,
+QPushButton#PosSecondaryButton:hover {
+    background-color: #585B70;
 }
 
 
-/* --- botón de acción --- */
+/* --- BOTÓN DE ACCIÓN --- */
 
-qpushbutton#posactionbutton {
+QPushButton#PosActionButton {
 
     min-height: 30px;
     padding: 6px 12px;
 
-    background-color: #1e1e2e;
-    color: #cdd6f4;
+    background-color: #1E1E2E;
+    color: #CDD6F4;
 
     border: 1px solid #313244;
     border-radius: 6px;
@@ -115,24 +115,24 @@ qpushbutton#posactionbutton {
     font-weight: 600;
 }
 
-qpushbutton#posactionbutton:hover {
-    background-color: #2a2a40;
+QPushButton#PosActionButton:hover {
+    background-color: #2A2A40;
 }
 
-qpushbutton#posactionbutton:pressed {
+QPushButton#PosActionButton:pressed {
     background-color: #363650;
 }
 
 
-/* --- botón de filtro --- */
+/* --- BOTÓN DE FILTRO --- */
 
-qpushbutton#filterbutton {
+QPushButton#FilterButton {
 
     min-height: 30px;
     padding: 6px 12px;
 
-    background-color: #1e1e2e;
-    color: #a6adc8;
+    background-color: #1E1E2E;
+    color: #A6ADC8;
 
     border: 1px solid #313244;
     border-radius: 6px;
@@ -140,26 +140,26 @@ qpushbutton#filterbutton {
     font-weight: 600;
 }
 
-qpushbutton#filterbutton:hover {
-    background-color: #1e1e2e;
-    color: #cdd6f4;
+QPushButton#FilterButton:hover {
+    background-color: #1E1E2E;
+    color: #CDD6F4;
 }
 
-qpushbutton#filterbutton:checked {
-    background-color: #89b4fa;
-    color: #1e1e2e;
-    border-color: #89b4fa;
+QPushButton#FilterButton:checked {
+    background-color: #89B4FA;
+    color: #1E1E2E;
+    border-color: #89B4FA;
 }
 
 
-/* --- sidebar toggle --- */
+/* --- SIDEBAR TOGGLE --- */
 
-qpushbutton#sidebartoggle {
+QPushButton#SidebarToggle {
 
     min-height: 30px;
 
     background-color: transparent;
-    color: #cdd6f4;
+    color: #CDD6F4;
 
     border: none;
     border-radius: 6px;
@@ -170,19 +170,19 @@ qpushbutton#sidebartoggle {
     font-weight: 600;
 }
 
-qpushbutton#sidebartoggle:hover {
+QPushButton#SidebarToggle:hover {
     background-color: #313244;
 }
 
 
-/* --- navegación --- */
+/* --- NAVEGACIÓN --- */
 
-qpushbutton#navbutton {
+QPushButton#NavButton {
 
     min-height: 32px;
 
     background-color: transparent;
-    color: #cdd6f4;
+    color: #CDD6F4;
 
     border: none;
     border-radius: 6px;
@@ -194,25 +194,25 @@ qpushbutton#navbutton {
     font-weight: 500;
 }
 
-qpushbutton#navbutton:hover {
+QPushButton#NavButton:hover {
     background-color: #313244;
 }
 
-qpushbutton#navbutton:checked {
-    background-color: #89b4fa;
-    color: #1e1e2e;
+QPushButton#NavButton:checked {
+    background-color: #89B4FA;
+    color: #1E1E2E;
     font-weight: 600;
 }
 
 
-/* --- historial --- */
+/* --- HISTORIAL --- */
 
-qpushbutton#historytoggle {
+QPushButton#HistoryToggle {
 
     min-height: 30px;
 
-    background-color: #1e1e2e;
-    color: #cdd6f4;
+    background-color: #1E1E2E;
+    color: #CDD6F4;
 
     border: 1px solid #313244;
     border-radius: 6px;
@@ -220,26 +220,26 @@ qpushbutton#historytoggle {
     padding: 6px 10px;
 }
 
-qpushbutton#historytoggle:hover {
-    background-color: #1e1e2e;
+QPushButton#HistoryToggle:hover {
+    background-color: #1E1E2E;
 }
 
-qpushbutton#historytoggle:checked {
-    background-color: #89b4fa;
-    color: #1e1e2e;
-    border-color: #89b4fa;
+QPushButton#HistoryToggle:checked {
+    background-color: #89B4FA;
+    color: #1E1E2E;
+    border-color: #89B4FA;
 }
 
 
-/* --- undo / redo --- */
+/* --- UNDO / REDO --- */
 
-qpushbutton#undobutton,
-qpushbutton#redobutton {
+QPushButton#UndoButton,
+QPushButton#RedoButton {
 
     min-height: 30px;
 
-    background-color: #1e1e2e;
-    color: #cdd6f4;
+    background-color: #1E1E2E;
+    color: #CDD6F4;
 
     border: 1px solid #313244;
     border-radius: 6px;
@@ -247,50 +247,50 @@ qpushbutton#redobutton {
     font-size: 15px;
 }
 
-qpushbutton#undobutton:hover,
-qpushbutton#redobutton:hover {
+QPushButton#UndoButton:hover,
+QPushButton#RedoButton:hover {
     background-color: #313244;
-    border-color: #89b4fa;
+    border-color: #89B4FA;
 }
 
-qpushbutton#undobutton:disabled,
-qpushbutton#redobutton:disabled {
-    color: #585b70;
+QPushButton#UndoButton:disabled,
+QPushButton#RedoButton:disabled {
+    color: #585B70;
     background-color: #181825;
     border-color: #313244;
 }
 
 
-/* --- limpiar historial --- */
+/* --- LIMPIAR HISTORIAL --- */
 
-qpushbutton#clearhistorybutton {
+QPushButton#ClearHistoryButton {
 
     min-height: 30px;
 
-    background-color: #45475a;
-    color: #1e1e2e;
+    background-color: #45475A;
+    color: #CDD6F4;
 
-    border: 1px solid #11111b;
+    border: 1px solid #585B70;
     border-radius: 6px;
 
     padding: 6px 12px;
 }
 
-qpushbutton#clearhistorybutton:hover {
-    background-color: #11111b;
+QPushButton#ClearHistoryButton:hover {
+    background-color: #585B70;
 }
 
 
-/* --- peligro --- */
+/* --- PELIGRO --- */
 
-qpushbutton#btn_danger {
+QPushButton#btn_danger {
 
     min-height: 30px;
 
-    background-color: #f38ba8;
-    color: #1e1e2e;
+    background-color: #E74C3C;
+    color: #CDD6F4;
 
-    border: 1px solid #eba0ac;
+    border: 1px solid #EBA0AC;
     border-radius: 6px;
 
     padding: 7px 16px;
@@ -298,21 +298,21 @@ qpushbutton#btn_danger {
     font-weight: 600;
 }
 
-qpushbutton#btn_danger:hover {
-    background-color: #eba0ac;
+QPushButton#btn_danger:hover {
+    background-color: #EBA0AC;
 }
 
-qpushbutton#btn_danger:pressed {
-    background-color: #f38ba8;
+QPushButton#btn_danger:pressed {
+    background-color: #F38BA8;
 }
 
 
-/* --- botón de eliminar envío --- */
+/* --- BOTÓN DE ELIMINAR ENVÍO --- */
 
-qpushbutton#shipmentremovebutton {
+QPushButton#ShipmentRemoveButton {
 
     background-color: transparent;
-    color: #eba0ac;
+    color: #EBA0AC;
 
     border: none;
     padding: 4px 8px;
@@ -320,20 +320,20 @@ qpushbutton#shipmentremovebutton {
     font-weight: 600;
 }
 
-qpushbutton#shipmentremovebutton:hover {
-    color: #f38ba8;
-    background-color: #2a1e28;
+QPushButton#ShipmentRemoveButton:hover {
+    color: #F38BA8;
+    background-color: #2A1E28;
 }
 
 
-/* --- botón de tema --- */
+/* --- BOTÓN DE TEMA --- */
 
-qpushbutton#themebutton {
+QPushButton#ThemeButton {
 
     min-height: 32px;
 
-    background-color: #1e1e2e;
-    color: #cdd6f4;
+    background-color: #1E1E2E;
+    color: #CDD6F4;
 
     border: 1px solid #313244;
     border-radius: 6px;
@@ -343,16 +343,16 @@ qpushbutton#themebutton {
     font-weight: 600;
 }
 
-qpushbutton#themebutton:hover {
+QPushButton#ThemeButton:hover {
     background-color: #313244;
 }
 
-qpushbutton#themebutton:checked {
-    background-color: #89b4fa;
-    color: #1e1e2e;
-    border-color: #89b4fa;
+QPushButton#ThemeButton:checked {
+    background-color: #89B4FA;
+    color: #1E1E2E;
+    border-color: #89B4FA;
 }
 
-qpushbutton#themebutton:checked:hover {
-    background-color: #b4befe;
+QPushButton#ThemeButton:checked:hover {
+    background-color: #B4BEFE;
 }

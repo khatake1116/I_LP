@@ -6,106 +6,106 @@
    ========================================================== */
 
 /* ==========================================================
-   dialogs
+   DIALOGS
    ========================================================== */
 
-qdialog {
+QDialog {
 
-    background-color: #1e1e2e;
-    color: #cdd6f4;
+    background-color: #1E1E2E;
+    color: #CDD6F4;
 
-    font-family: "segoe ui";
+    font-family: "Segoe UI";
     font-size: 13px;
 }
 
 
-/* --- texto --- */
+/* --- TEXTO --- */
 
-qdialog qlabel {
-    color: #cdd6f4;
+QDialog QLabel {
+    color: #CDD6F4;
 }
 
 
-/* --- inputs --- */
+/* --- INPUTS --- */
 
-qlineedit,
-qspinbox,
-qdoublespinbox,
-qcombobox,
-qdateedit {
+QLineEdit,
+QSpinBox,
+QDoubleSpinBox,
+QComboBox,
+QDateEdit {
 
     min-height: 28px;
 
-    background-color: #1e1e2e;
-    color: #cdd6f4;
+    background-color: #1E1E2E;
+    color: #CDD6F4;
 
     border: 1px solid #313244;
     border-radius: 5px;
 
     padding: 5px 8px;
 
-    selection-background-color: #89b4fa;
-    selection-color: #1e1e2e;
+    selection-background-color: #89B4FA;
+    selection-color: #1E1E2E;
 }
 
-qlineedit:hover,
-qspinbox:hover,
-qdoublespinbox:hover,
-qcombobox:hover,
-qdateedit:hover {
-    border-color: #45475a;
+QLineEdit:hover,
+QSpinBox:hover,
+QDoubleSpinBox:hover,
+QComboBox:hover,
+QDateEdit:hover {
+    border-color: #45475A;
 }
 
-qlineedit:focus,
-qspinbox:focus,
-qdoublespinbox:focus,
-qcombobox:focus,
-qdateedit:focus {
-    border: 1px solid #89b4fa;
+QLineEdit:focus,
+QSpinBox:focus,
+QDoubleSpinBox:focus,
+QComboBox:focus,
+QDateEdit:focus {
+    border: 1px solid #89B4FA;
 }
 
 
-/* --- campos solo lectura --- */
+/* --- CAMPOS SOLO LECTURA --- */
 
-qlineedit:read-only {
+QLineEdit:read-only {
 
     background-color: #181825;
-    color: #a6adc8;
+    color: #A6ADC8;
 
     border-color: #313244;
 }
 
 
-/* --- combobox --- */
+/* --- COMBOBOX --- */
 
-qcombobox {
+QComboBox {
     padding-right: 24px;
 }
 
-qcombobox::drop-down {
+QComboBox::drop-down {
     width: 22px;
     border: none;
 }
 
-qcombobox qabstractitemview {
+QComboBox QAbstractItemView {
 
-    background-color: #1e1e2e;
-    color: #cdd6f4;
+    background-color: #1E1E2E;
+    color: #CDD6F4;
 
     border: 1px solid #313244;
 
-    selection-background-color: #89b4fa;
-    selection-color: #1e1e2e;
+    selection-background-color: #89B4FA;
+    selection-color: #1E1E2E;
 }
 
 
-/* --- groupbox --- */
+/* --- GROUPBOX --- */
 
-qgroupbox#settingsgroup {
+QGroupBox#SettingsGroup {
 
-    color: #cdd6f4;
+    color: #CDD6F4;
 
-    background-color: #1e1e2e;
+    background-color: #1E1E2E;
 
     border: 1px solid #313244;
     border-radius: 8px;
@@ -116,38 +116,38 @@ qgroupbox#settingsgroup {
     font-weight: 600;
 }
 
-qgroupbox#settingsgroup::title {
+QGroupBox#SettingsGroup::title {
 
     subcontrol-origin: margin;
     subcontrol-position: top left;
 
     padding: 0 6px;
 
-    color: #b4befe;
+    color: #B4BEFE;
 }
 
 
-/* --- settings --- */
+/* --- SETTINGS --- */
 
-qlabel#settingslabel {
-    color: #cdd6f4;
+QLabel#SettingsLabel {
+    color: #CDD6F4;
     font-size: 13px;
     font-weight: 600;
 }
 
-qlabel#settingsinfo {
-    color: #a6adc8;
+QLabel#SettingsInfo {
+    color: #A6ADC8;
     font-size: 12px;
     font-style: italic;
 }
 
 
-/* --- diálogos específicos --- */
+/* --- DIÁLOGOS ESPECÍFICOS --- */
 
-qlabel#destinatariosubtitle,
-qlabel#shipmentdialogsection {
+QLabel#DestinatarioSubtitle,
+QLabel#ShipmentDialogSection {
 
-    color: #b4befe;
+    color: #B4BEFE;
 
     font-size: 14px;
     font-weight: 600;
@@ -156,11 +156,11 @@ qlabel#shipmentdialogsection {
 }
 
 
-qlineedit#destinatarioinput,
-qtextedit#destinatarioinput {
+QLineEdit#DestinatarioInput,
+QTextEdit#DestinatarioInput {
 
-    background-color: #1e1e2e;
-    color: #cdd6f4;
+    background-color: #1E1E2E;
+    color: #CDD6F4;
 
     border: 1px solid #313244;
     border-radius: 5px;
@@ -168,61 +168,61 @@ qtextedit#destinatarioinput {
     padding: 7px;
 }
 
-qlineedit#destinatarioinput:focus,
-qtextedit#destinatarioinput:focus {
-    border-color: #89b4fa;
+QLineEdit#DestinatarioInput:focus,
+QTextEdit#DestinatarioInput:focus {
+    border-color: #89B4FA;
 }
 
 
-/* --- alertas --- */
+/* --- ALERTAS --- */
 
-qlabel#purchasewarninglabel {
+QLabel#PurchaseWarningLabel {
 
-    color: #fab387;
+    color: #FAB387;
 
-    background-color: #2a241b;
+    background-color: #2A241B;
 
-    border: 1px solid #585b70;
+    border: 1px solid #585B70;
     border-radius: 5px;
 
     padding: 8px;
 }
 
 
-/* --- scroll de diálogos --- */
+/* --- SCROLL DE DIÁLOGOS --- */
 
-qscrollarea#shipmentdialogscroll {
+QScrollArea#ShipmentDialogScroll {
 
     background-color: transparent;
     border: none;
 }
 
-qwidget#shipmentdialogcontent {
+QWidget#ShipmentDialogContent {
 
-    background-color: #1e1e2e;
-    color: #cdd6f4;
+    background-color: #1E1E2E;
+    color: #CDD6F4;
 }
 
 
-/* --- menús --- */
+/* --- MENÚS --- */
 
-qmenu {
+QMenu {
 
-    background-color: #1e1e2e;
-    color: #cdd6f4;
+    background-color: #1E1E2E;
+    color: #CDD6F4;
 
     border: 1px solid #313244;
 
     padding: 4px;
 }
 
-qmenu::item {
+QMenu::item {
     padding: 7px 24px 7px 10px;
     border-radius: 4px;
 }
 
-qmenu::item:selected {
+QMenu::item:selected {
 
-    background-color: #89b4fa;
-    color: #1e1e2e;
+    background-color: #89B4FA;
+    color: #1E1E2E;
 }

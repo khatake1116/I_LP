@@ -6,14 +6,14 @@
    ========================================================== */
 
 /* ==========================================================
-   tables
+   TABLES
    ========================================================== */
 
-qtableview,
-qtablewidget {
+QTableView,
+QTableWidget {
 
-    background-color: #1e1e2e;
-    color: #cdd6f4;
+    background-color: #1E1E2E;
+    color: #CDD6F4;
 
     alternate-background-color: #181825;
 
@@ -22,113 +22,113 @@ qtablewidget {
     border: 1px solid #313244;
     border-radius: 8px;
 
-    selection-background-color: #2a2a40;
-    selection-color: #cdd6f4;
+    selection-background-color: #2A2A40;
+    selection-color: #CDD6F4;
 
     outline: none;
 
-    font-family: "segoe ui";
+    font-family: "Segoe UI";
     font-size: 13px;
 }
 
 
-/* --- filas --- */
+/* --- FILAS --- */
 
-qtableview::item,
-qtablewidget::item {
+QTableView::item,
+QTableWidget::item {
     padding: 6px;
     border: none;
 }
 
-qtableview::item:hover,
-qtablewidget::item:hover {
-    background-color: #1e1e2e;
+QTableView::item:hover,
+QTableWidget::item:hover {
+    background-color: #1E1E2E;
 }
 
 
-/* --- cabeceras --- */
+/* --- CABECERAS --- */
 
-qheaderview::section {
+QHeaderView::section {
 
     background-color: #181825;
-    color: #cdd6f4;
+    color: #CDD6F4;
 
     padding: 8px 10px;
 
     border: none;
     border-bottom: 1px solid #313244;
 
-    font-family: "segoe ui";
+    font-family: "Segoe UI";
     font-size: 12px;
     font-weight: 600;
 }
 
 
-/* --- tabla de ventas --- */
+/* --- TABLA DE VENTAS --- */
 
-qtablewidget#salestable {
-    background-color: #1e1e2e;
+QTableWidget#SalesTable {
+    background-color: #1E1E2E;
     alternate-background-color: #181825;
 
     border: 1px solid #313244;
     border-radius: 8px;
 
-    selection-background-color: #2a2a40;
-    selection-color: #cdd6f4;
+    selection-background-color: #2A2A40;
+    selection-color: #CDD6F4;
 }
 
 
-/* --- carrito pos --- */
+/* --- CARRITO POS --- */
 
-qtablewidget#poscarttable {
+QTableWidget#PosCartTable {
 
-    background-color: #1e1e2e;
+    background-color: #1E1E2E;
     alternate-background-color: #181825;
 
-    color: #cdd6f4;
+    color: #CDD6F4;
 
     gridline-color: #313244;
 
     border: 1px solid #313244;
     border-radius: 8px;
 
-    selection-background-color: #2a2a40;
-    selection-color: #cdd6f4;
+    selection-background-color: #2A2A40;
+    selection-color: #CDD6F4;
 }
 
 
-/* --- items de envíos --- */
+/* --- ITEMS DE ENVÍOS --- */
 
-qtablewidget#shipmentitemstable {
+QTableWidget#ShipmentItemsTable {
 
-    background-color: #1e1e2e;
+    background-color: #1E1E2E;
     alternate-background-color: #181825;
 
-    color: #cdd6f4;
+    color: #CDD6F4;
 
     gridline-color: #313244;
 
     border: 1px solid #313244;
     border-radius: 6px;
 
-    selection-background-color: #2a2a40;
-    selection-color: #cdd6f4;
+    selection-background-color: #2A2A40;
+    selection-color: #CDD6F4;
 }
 
 
-/* --- estados de selección --- */
+/* --- ESTADOS DE SELECCIÓN --- */
 
-qtableview::item:selected,
-qtablewidget::item:selected {
-    background-color: #2a2a40;
-    color: #cdd6f4;
+QTableView::item:selected,
+QTableWidget::item:selected {
+    background-color: #2A2A40;
+    color: #CDD6F4;
 }
 
 
-/* --- scrollbar de tablas --- */
+/* --- SCROLLBAR DE TABLAS --- */
 
-qtableview qscrollbar:vertical,
-qtablewidget qscrollbar:vertical {
+QTableView QScrollBar:vertical,
+QTableWidget QScrollBar:vertical {
 
     background-color: #181825;
     width: 8px;
@@ -137,24 +137,24 @@ qtablewidget qscrollbar:vertical {
     border-radius: 4px;
 }
 
-qtableview qscrollbar::handle:vertical,
-qtablewidget qscrollbar::handle:vertical {
+QTableView QScrollBar::handle:vertical,
+QTableWidget QScrollBar::handle:vertical {
 
-    background-color: #45475a;
+    background-color: #45475A;
 
     min-height: 30px;
 
     border-radius: 4px;
 }
 
-qtableview qscrollbar::handle:vertical:hover,
-qtablewidget qscrollbar::handle:vertical:hover {
-    background-color: #89b4fa;
+QTableView QScrollBar::handle:vertical:hover,
+QTableWidget QScrollBar::handle:vertical:hover {
+    background-color: #89B4FA;
 }
 
-qtableview qscrollbar::add-line:vertical,
-qtableview qscrollbar::sub-line:vertical,
-qtablewidget qscrollbar::add-line:vertical,
-qtablewidget qscrollbar::sub-line:vertical {
+QTableView QScrollBar::add-line:vertical,
+QTableView QScrollBar::sub-line:vertical,
+QTableWidget QScrollBar::add-line:vertical,
+QTableWidget QScrollBar::sub-line:vertical {
     height: 0;
 }
