@@ -1,0 +1,228 @@
+/* ==========================================================
+   ATENCION: archivo GENERADO automaticamente.
+   Fuente: ui/styles/components/dialogs.qss
+   Herramienta: scripts/generate_dark_components.py
+   No editar a mano: regenerar tras cambiar el componente claro.
+   ========================================================== */
+
+/* ==========================================================
+   dialogs
+   ========================================================== */
+
+qdialog {
+
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+
+    font-family: "segoe ui";
+    font-size: 13px;
+}
+
+
+/* --- texto --- */
+
+qdialog qlabel {
+    color: #cdd6f4;
+}
+
+
+/* --- inputs --- */
+
+qlineedit,
+qspinbox,
+qdoublespinbox,
+qcombobox,
+qdateedit {
+
+    min-height: 28px;
+
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+
+    border: 1px solid #313244;
+    border-radius: 5px;
+
+    padding: 5px 8px;
+
+    selection-background-color: #89b4fa;
+    selection-color: #1e1e2e;
+}
+
+qlineedit:hover,
+qspinbox:hover,
+qdoublespinbox:hover,
+qcombobox:hover,
+qdateedit:hover {
+    border-color: #45475a;
+}
+
+qlineedit:focus,
+qspinbox:focus,
+qdoublespinbox:focus,
+qcombobox:focus,
+qdateedit:focus {
+    border: 1px solid #89b4fa;
+}
+
+
+/* --- campos solo lectura --- */
+
+qlineedit:read-only {
+
+    background-color: #181825;
+    color: #a6adc8;
+
+    border-color: #313244;
+}
+
+
+/* --- combobox --- */
+
+qcombobox {
+    padding-right: 24px;
+}
+
+qcombobox::drop-down {
+    width: 22px;
+    border: none;
+}
+
+qcombobox qabstractitemview {
+
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+
+    border: 1px solid #313244;
+
+    selection-background-color: #89b4fa;
+    selection-color: #1e1e2e;
+}
+
+
+/* --- groupbox --- */
+
+qgroupbox#settingsgroup {
+
+    color: #cdd6f4;
+
+    background-color: #1e1e2e;
+
+    border: 1px solid #313244;
+    border-radius: 8px;
+
+    margin-top: 12px;
+    padding: 12px;
+
+    font-weight: 600;
+}
+
+qgroupbox#settingsgroup::title {
+
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+
+    padding: 0 6px;
+
+    color: #b4befe;
+}
+
+
+/* --- settings --- */
+
+qlabel#settingslabel {
+    color: #cdd6f4;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+qlabel#settingsinfo {
+    color: #a6adc8;
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+/* --- diálogos específicos --- */
+
+qlabel#destinatariosubtitle,
+qlabel#shipmentdialogsection {
+
+    color: #b4befe;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    padding: 6px 0;
+}
+
+
+qlineedit#destinatarioinput,
+qtextedit#destinatarioinput {
+
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+
+    border: 1px solid #313244;
+    border-radius: 5px;
+
+    padding: 7px;
+}
+
+qlineedit#destinatarioinput:focus,
+qtextedit#destinatarioinput:focus {
+    border-color: #89b4fa;
+}
+
+
+/* --- alertas --- */
+
+qlabel#purchasewarninglabel {
+
+    color: #fab387;
+
+    background-color: #2a241b;
+
+    border: 1px solid #585b70;
+    border-radius: 5px;
+
+    padding: 8px;
+}
+
+
+/* --- scroll de diálogos --- */
+
+qscrollarea#shipmentdialogscroll {
+
+    background-color: transparent;
+    border: none;
+}
+
+qwidget#shipmentdialogcontent {
+
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+}
+
+
+/* --- menús --- */
+
+qmenu {
+
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+
+    border: 1px solid #313244;
+
+    padding: 4px;
+}
+
+qmenu::item {
+    padding: 7px 24px 7px 10px;
+    border-radius: 4px;
+}
+
+qmenu::item:selected {
+
+    background-color: #89b4fa;
+    color: #1e1e2e;
+}

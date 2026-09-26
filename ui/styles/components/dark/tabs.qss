@@ -1,0 +1,135 @@
+/* ==========================================================
+   ATENCION: archivo GENERADO automaticamente.
+   Fuente: ui/styles/components/tabs.qss
+   Herramienta: scripts/generate_dark_components.py
+   No editar a mano: regenerar tras cambiar el componente claro.
+   ========================================================== */
+
+/* ==========================================================
+   tabs
+   ========================================================== */
+
+qtabwidget {
+    background-color: transparent;
+    border: none;
+}
+
+
+/* --- panel --- */
+
+qtabwidget::pane {
+
+    background-color: #1e1e2e;
+
+    border: 1px solid #313244;
+    border-radius: 8px;
+
+    top: -1px;
+}
+
+
+/* --- tab base --- */
+
+qtabbar::tab {
+
+    background-color: #1e1e2e;
+    color: #a6adc8;
+
+    border: 1px solid #313244;
+    border-bottom: none;
+
+    padding: 8px 16px;
+
+    margin-right: 3px;
+
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+
+    font-family: "segoe ui";
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* --- hover --- */
+
+qtabbar::tab:hover:!selected {
+
+    background-color: #313244;
+    color: #cdd6f4;
+}
+
+
+/* --- activa --- */
+
+qtabbar::tab:selected {
+
+    background-color: #89b4fa;
+    color: #1e1e2e;
+
+    border-color: #89b4fa;
+
+    font-weight: 600;
+}
+
+
+/* ==========================================================
+   sales
+   ========================================================== */
+
+qtabwidget#salestabs::pane,
+qtabwidget#logisticstabs::pane,
+qtabwidget#inventorytabs::pane,
+qtabwidget#purchasestabs::pane {
+
+    background-color: #1e1e2e;
+
+    border: 1px solid #313244;
+    border-radius: 8px;
+
+    top: -1px;
+}
+
+
+qtabwidget#salestabs qtabbar::tab,
+qtabwidget#logisticstabs qtabbar::tab,
+qtabwidget#inventorytabs qtabbar::tab,
+qtabwidget#purchasestabs qtabbar::tab {
+
+    background-color: #1e1e2e;
+    color: #a6adc8;
+
+    border: 1px solid #313244;
+    border-bottom: none;
+
+    padding: 8px 16px;
+
+    margin-right: 3px;
+
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+
+qtabwidget#salestabs qtabbar::tab:hover,
+qtabwidget#logisticstabs qtabbar::tab:hover,
+qtabwidget#inventorytabs qtabbar::tab:hover,
+qtabwidget#purchasestabs qtabbar::tab:hover {
+
+    background-color: #313244;
+    color: #cdd6f4;
+}
+
+
+qtabwidget#salestabs qtabbar::tab:selected,
+qtabwidget#logisticstabs qtabbar::tab:selected,
+qtabwidget#inventorytabs qtabbar::tab:selected,
+qtabwidget#purchasestabs qtabbar::tab:selected {
+
+    background-color: #89b4fa;
+    color: #1e1e2e;
+
+    border-color: #89b4fa;
+
+    font-weight: 600;
+}

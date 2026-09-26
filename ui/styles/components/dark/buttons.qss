@@ -1,0 +1,358 @@
+/* ==========================================================
+   ATENCION: archivo GENERADO automaticamente.
+   Fuente: ui/styles/components/buttons.qss
+   Herramienta: scripts/generate_dark_components.py
+   No editar a mano: regenerar tras cambiar el componente claro.
+   ========================================================== */
+
+/* ==========================================================
+   buttons
+   identidad: windows 10/11 professional
+   ========================================================== */
+
+/* --- botón base --- */
+
+qpushbutton {
+    min-height: 30px;
+    padding: 6px 14px;
+
+    background-color: #89b4fa;
+    color: #1e1e2e;
+
+    border: 1px solid #b4befe;
+    border-radius: 6px;
+
+    font-family: "segoe ui";
+    font-size: 13px;
+    font-weight: 600;
+}
+
+qpushbutton:hover {
+    background-color: #b4befe;
+}
+
+qpushbutton:pressed {
+    background-color: #7fa0e8;
+}
+
+qpushbutton:disabled {
+    background-color: #313244;
+    color: #45475a;
+    border-color: #313244;
+}
+
+
+/* --- botón primario --- */
+
+qpushbutton#btn_primario,
+qpushbutton#btn_guardar,
+qpushbutton#logisticsprimarybutton,
+qpushbutton#posprimarybutton {
+
+    min-height: 32px;
+    padding: 7px 16px;
+
+    background-color: #89b4fa;
+    color: #1e1e2e;
+
+    border: 1px solid #b4befe;
+    border-radius: 6px;
+
+    font-weight: 600;
+}
+
+qpushbutton#btn_primario:hover,
+qpushbutton#btn_guardar:hover,
+qpushbutton#logisticsprimarybutton:hover,
+qpushbutton#posprimarybutton:hover {
+    background-color: #b4befe;
+}
+
+qpushbutton#btn_primario:pressed,
+qpushbutton#btn_guardar:pressed,
+qpushbutton#logisticsprimarybutton:pressed,
+qpushbutton#posprimarybutton:pressed {
+    background-color: #7fa0e8;
+}
+
+
+/* --- botón secundario --- */
+
+qpushbutton#btn_cancelar,
+qpushbutton#possecondarybutton {
+
+    min-height: 30px;
+    padding: 6px 14px;
+
+    background-color: #45475a;
+    color: #1e1e2e;
+
+    border: 1px solid #11111b;
+    border-radius: 6px;
+
+    font-weight: 600;
+}
+
+qpushbutton#btn_cancelar:hover,
+qpushbutton#possecondarybutton:hover {
+    background-color: #11111b;
+}
+
+
+/* --- botón de acción --- */
+
+qpushbutton#posactionbutton {
+
+    min-height: 30px;
+    padding: 6px 12px;
+
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+
+    border: 1px solid #313244;
+    border-radius: 6px;
+
+    font-weight: 600;
+}
+
+qpushbutton#posactionbutton:hover {
+    background-color: #2a2a40;
+}
+
+qpushbutton#posactionbutton:pressed {
+    background-color: #363650;
+}
+
+
+/* --- botón de filtro --- */
+
+qpushbutton#filterbutton {
+
+    min-height: 30px;
+    padding: 6px 12px;
+
+    background-color: #1e1e2e;
+    color: #a6adc8;
+
+    border: 1px solid #313244;
+    border-radius: 6px;
+
+    font-weight: 600;
+}
+
+qpushbutton#filterbutton:hover {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+}
+
+qpushbutton#filterbutton:checked {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+    border-color: #89b4fa;
+}
+
+
+/* --- sidebar toggle --- */
+
+qpushbutton#sidebartoggle {
+
+    min-height: 30px;
+
+    background-color: transparent;
+    color: #cdd6f4;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 7px 12px;
+
+    text-align: left;
+    font-weight: 600;
+}
+
+qpushbutton#sidebartoggle:hover {
+    background-color: #313244;
+}
+
+
+/* --- navegación --- */
+
+qpushbutton#navbutton {
+
+    min-height: 32px;
+
+    background-color: transparent;
+    color: #cdd6f4;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 8px 12px;
+
+    text-align: left;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+qpushbutton#navbutton:hover {
+    background-color: #313244;
+}
+
+qpushbutton#navbutton:checked {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+    font-weight: 600;
+}
+
+
+/* --- historial --- */
+
+qpushbutton#historytoggle {
+
+    min-height: 30px;
+
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+
+    border: 1px solid #313244;
+    border-radius: 6px;
+
+    padding: 6px 10px;
+}
+
+qpushbutton#historytoggle:hover {
+    background-color: #1e1e2e;
+}
+
+qpushbutton#historytoggle:checked {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+    border-color: #89b4fa;
+}
+
+
+/* --- undo / redo --- */
+
+qpushbutton#undobutton,
+qpushbutton#redobutton {
+
+    min-height: 30px;
+
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+
+    border: 1px solid #313244;
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+qpushbutton#undobutton:hover,
+qpushbutton#redobutton:hover {
+    background-color: #313244;
+    border-color: #89b4fa;
+}
+
+qpushbutton#undobutton:disabled,
+qpushbutton#redobutton:disabled {
+    color: #585b70;
+    background-color: #181825;
+    border-color: #313244;
+}
+
+
+/* --- limpiar historial --- */
+
+qpushbutton#clearhistorybutton {
+
+    min-height: 30px;
+
+    background-color: #45475a;
+    color: #1e1e2e;
+
+    border: 1px solid #11111b;
+    border-radius: 6px;
+
+    padding: 6px 12px;
+}
+
+qpushbutton#clearhistorybutton:hover {
+    background-color: #11111b;
+}
+
+
+/* --- peligro --- */
+
+qpushbutton#btn_danger {
+
+    min-height: 30px;
+
+    background-color: #f38ba8;
+    color: #1e1e2e;
+
+    border: 1px solid #eba0ac;
+    border-radius: 6px;
+
+    padding: 7px 16px;
+
+    font-weight: 600;
+}
+
+qpushbutton#btn_danger:hover {
+    background-color: #eba0ac;
+}
+
+qpushbutton#btn_danger:pressed {
+    background-color: #f38ba8;
+}
+
+
+/* --- botón de eliminar envío --- */
+
+qpushbutton#shipmentremovebutton {
+
+    background-color: transparent;
+    color: #eba0ac;
+
+    border: none;
+    padding: 4px 8px;
+
+    font-weight: 600;
+}
+
+qpushbutton#shipmentremovebutton:hover {
+    color: #f38ba8;
+    background-color: #2a1e28;
+}
+
+
+/* --- botón de tema --- */
+
+qpushbutton#themebutton {
+
+    min-height: 32px;
+
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+
+    border: 1px solid #313244;
+    border-radius: 6px;
+
+    padding: 7px 16px;
+
+    font-weight: 600;
+}
+
+qpushbutton#themebutton:hover {
+    background-color: #313244;
+}
+
+qpushbutton#themebutton:checked {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+    border-color: #89b4fa;
+}
+
+qpushbutton#themebutton:checked:hover {
+    background-color: #b4befe;
+}

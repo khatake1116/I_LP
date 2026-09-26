@@ -73,17 +73,22 @@ def load_theme_qss(theme: str = "dark") -> str:
         ├── dark.qss
         ├── light.qss
         └── components/
-            ├── buttons.qss
+            ├── buttons.qss      (geometría + colores del tema claro)
             ├── tables.qss
             ├── dialogs.qss
             ├── tabs.qss
-            └── dashboard.qss
+            ├── dashboard.qss
+            └── dark/            (versión oscura generada de cada
+                                  componente; ver
+                                  scripts/generate_dark_components.py)
 
-    El tema base se carga primero.
-    Los componentes se concatenan posteriormente.
-    
-    NOTA: El tema oscuro ya incluye todos los estilos necesarios,
-    por lo que no carga componentes externos para evitar sobrescrituras.
+    El tema base se carga primero y los componentes después, por lo
+    que estos aportan geometría (paddings, alturas mínimas, radios,
+    tipografía) e identidad de color.
+
+    IMPORTANTE: ambos temas deben cargar componentes. Si solo el tema
+    claro los carga, el oscuro queda sin espaciados ni tamaños mínimos
+    y la interfaz se ve comprimida y forzada respecto al claro.
     """
 
     theme = normalize_theme(theme)
@@ -96,13 +101,15 @@ def load_theme_qss(theme: str = "dark") -> str:
     if not base_qss:
         return ""
 
-    # El tema oscuro ya tiene todos los estilos definidos en el archivo base
-    # Los componentes tienen colores hardcodeados del tema claro
-    if theme == "dark":
-        return base_qss
-
-    # Solo cargar componentes para el tema claro
     components_dir = styles_dir / "components"
+
+    # En el tema oscuro se cargan las variantes oscuras de los
+    # componentes (misma geometría, paleta Catppuccin), para no
+    # sobrescribir los colores del tema con los del claro.
+    if theme == "dark":
+        dark_components_dir = components_dir / "dark"
+        if dark_components_dir.is_dir():
+            components_dir = dark_components_dir
 
     qss_parts = [base_qss]
 

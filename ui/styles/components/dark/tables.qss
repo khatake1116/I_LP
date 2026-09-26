@@ -1,0 +1,160 @@
+/* ==========================================================
+   ATENCION: archivo GENERADO automaticamente.
+   Fuente: ui/styles/components/tables.qss
+   Herramienta: scripts/generate_dark_components.py
+   No editar a mano: regenerar tras cambiar el componente claro.
+   ========================================================== */
+
+/* ==========================================================
+   tables
+   ========================================================== */
+
+qtableview,
+qtablewidget {
+
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+
+    alternate-background-color: #181825;
+
+    gridline-color: #313244;
+
+    border: 1px solid #313244;
+    border-radius: 8px;
+
+    selection-background-color: #2a2a40;
+    selection-color: #cdd6f4;
+
+    outline: none;
+
+    font-family: "segoe ui";
+    font-size: 13px;
+}
+
+
+/* --- filas --- */
+
+qtableview::item,
+qtablewidget::item {
+    padding: 6px;
+    border: none;
+}
+
+qtableview::item:hover,
+qtablewidget::item:hover {
+    background-color: #1e1e2e;
+}
+
+
+/* --- cabeceras --- */
+
+qheaderview::section {
+
+    background-color: #181825;
+    color: #cdd6f4;
+
+    padding: 8px 10px;
+
+    border: none;
+    border-bottom: 1px solid #313244;
+
+    font-family: "segoe ui";
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* --- tabla de ventas --- */
+
+qtablewidget#salestable {
+    background-color: #1e1e2e;
+    alternate-background-color: #181825;
+
+    border: 1px solid #313244;
+    border-radius: 8px;
+
+    selection-background-color: #2a2a40;
+    selection-color: #cdd6f4;
+}
+
+
+/* --- carrito pos --- */
+
+qtablewidget#poscarttable {
+
+    background-color: #1e1e2e;
+    alternate-background-color: #181825;
+
+    color: #cdd6f4;
+
+    gridline-color: #313244;
+
+    border: 1px solid #313244;
+    border-radius: 8px;
+
+    selection-background-color: #2a2a40;
+    selection-color: #cdd6f4;
+}
+
+
+/* --- items de envíos --- */
+
+qtablewidget#shipmentitemstable {
+
+    background-color: #1e1e2e;
+    alternate-background-color: #181825;
+
+    color: #cdd6f4;
+
+    gridline-color: #313244;
+
+    border: 1px solid #313244;
+    border-radius: 6px;
+
+    selection-background-color: #2a2a40;
+    selection-color: #cdd6f4;
+}
+
+
+/* --- estados de selección --- */
+
+qtableview::item:selected,
+qtablewidget::item:selected {
+    background-color: #2a2a40;
+    color: #cdd6f4;
+}
+
+
+/* --- scrollbar de tablas --- */
+
+qtableview qscrollbar:vertical,
+qtablewidget qscrollbar:vertical {
+
+    background-color: #181825;
+    width: 8px;
+
+    margin: 1px;
+    border-radius: 4px;
+}
+
+qtableview qscrollbar::handle:vertical,
+qtablewidget qscrollbar::handle:vertical {
+
+    background-color: #45475a;
+
+    min-height: 30px;
+
+    border-radius: 4px;
+}
+
+qtableview qscrollbar::handle:vertical:hover,
+qtablewidget qscrollbar::handle:vertical:hover {
+    background-color: #89b4fa;
+}
+
+qtableview qscrollbar::add-line:vertical,
+qtableview qscrollbar::sub-line:vertical,
+qtablewidget qscrollbar::add-line:vertical,
+qtablewidget qscrollbar::sub-line:vertical {
+    height: 0;
+}
